@@ -33,6 +33,7 @@
     
 
     <!-- main.css는 맨 하단에 위치해야 한다. -->
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     
     <!-- 팝업창, 뱃지 등이 홈페이지에 올라가는 순서를 정렬해주는 것이다. -->
@@ -57,6 +58,8 @@
     <!-- youtube.js -->
     <script src="./js/youtube.js"></script>
         <!-- 언제나 하단에 위치해야 한다. -->
+    <!-- common.js -->
+    <script defer src="../js/common.js"></script>
     <!-- index.js -->
     <script defer src="./js/index.js"></script>
 </head>
@@ -79,7 +82,9 @@
                 <!-- util menu 개인정보, 설정 등을 다룬다 -->
                 <ul class="util_menu">
                     <li>
-                        <a href="#">
+                        <!-- 이렇게만 적어줘도 해당 위치로 간다. -->
+                        <!-- 가장 기초가 되는 index.html파일로 자동으로 찾아가기 때문이다 -->
+                        <a href="/signin">
                             Sign in
                         </a>
                     </li>
