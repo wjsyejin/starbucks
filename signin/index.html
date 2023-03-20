@@ -32,8 +32,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     
 
-    <!-- main.css는 맨 하단에 위치해야 한다. -->
+    <!-- signin.css는 맨 하단에 위치해야 한다. -->
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/signin.css">
     
     <!-- 팝업창, 뱃지 등이 홈페이지에 올라가는 순서를 정렬해주는 것이다. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -55,9 +56,9 @@
 
     <!-- js 불러오기, defer 사용해서 내용 읽어온 뒤에 필요한 내용 출력하기 -->
 
-    <!-- 언제나 하단에 위치해야 한다. -->
     <!-- common.js -->
     <script defer src="../js/common.js"></script>
+    <!-- signin.js 만들면 아마 하단에 위치해야 한다. 주 js파일이므로 -->
 
 </head>
 
@@ -251,24 +252,32 @@
 
 
     <!-- 들어가야하는 새로운 내용들 -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- 아이디 비밀번호 입력하는 부분(아이디 저장 없이) -->
+    <!-- SIGNIN -->
+    <section id="body_layout" class="signin">
+        <h1>로그인</h1>
+        <div class="signin_card"><!-- box or card라고 부른다 -->
+            <h2>
+                <span>Welcome!</span>
+                 스타벅스 코리아에 오신 것을 환영합니다.
+            </h2>
+            <form>
+                <!--  action=""얘는 다음에 붙여서 알아볼 것이다 오늘은 이걸 구현할 일이 없을 것이므로 -->
+                <input type="text" name="" id="" placeholder="아이디를 입력해 주세요">
+                <input type="password" name="" id="" placeholder="비밀번호를 입력해 주세요">
+                <input type="submit" name="" id="" value="로그인">
+                <p>
+                    * 타 사이트와 비밀번호를 동일하게 사용할 경우 도용의 위험이 있으므로,<br>
+                     정기적인 비밀번호 변경을 해주시길 바랍니다.
+                </p>
+            </form>
+            <div class="action">
+                <a href="javascript:void(0)">회원가입</a>
+                <a href="javascript:void(0)">아이디 찾기</a>
+                <a href="javascript:void(0)">비밀번호 찾기</a>
+            </div>
+        </div>
+    </section>
 
 
 
